@@ -1,0 +1,6 @@
+{
+  "name": "F-Form DSP Studio & Pitch-Time Engine",
+  "description": "Banco de pruebas interactivo, auditoría y nuevo algoritmo de pitch-shifting y time-stretching con preservación de formantes y transitorios para F-Form.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
