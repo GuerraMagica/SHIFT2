@@ -35,8 +35,13 @@ else
     fi
 fi
 
-# 3. Directorio de compilacion
+# 3. Directorio de compilacion y limpieza
 BUILD_DIR="build"
+if [ "$1" = "--clean" ] || [ "$1" = "-c" ]; then
+    echo ">> [LIMPIEZA] Eliminando carpeta build anterior..."
+    rm -rf "$BUILD_DIR"
+fi
+
 echo ">> Configurando proyecto con CMake (Xcode / Clang)..."
 
 # Detectar SDK de AAX
